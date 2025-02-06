@@ -1,0 +1,327 @@
+<body>
+    <form name="form1" method="post" action="./DBSX_DcwtList.aspx?State=1" id="form1" style="height: 100%" enctype="multipart/form-data">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTkwOTQ1MTYwOA8WAh4FU3RhdGUFATEWAgIEDxYCHgdlbmN0eXBlBRNtdWx0aXBhcnQvZm9ybS1kYXRhZGS+pAp1LAZHkjpVr6kstx5xxIcJYgu+1B4nemVt8IpOQg==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6877A02D" />
+</div>
+    <input type="hidden" name="hidSeltID" id="hidSeltID" />
+    <div class="H205_wripper">
+        <div class="H105_subtitle clear" style="margin-left: 4%; position: absolute; left: 0;
+            top: 2.2rem; width: 92%; margin-right: 4%;">
+            <div class="H105_local fl">
+                <img src="../images/H105_local.png" alt="" class="H105_caseImg fl">
+                <p>
+                    待办事项</p>
+            </div>
+            <div class="H105_searchCoat fr clear">
+                <!-- 按钮-->
+                <p style="font-size: 14px; margin-top: 14px; float: left; display: none;">
+                    请输入姓名或嫌疑人编号:&nbsp;&nbsp;</p>
+                <input name="txtKeyWords" type="text" id="txtKeyWords" class="S205_search fl" onkeypress="javascript:EnterTo()" style="display: none;" />
+                <input type="submit" name="imgBtnQuery" value=" 搜索 " onclick="Search();" id="imgBtnQuery" class="S205_searchBtn fl" style="display: none;" />
+                <p style="float: left;" id="td_plwt">
+                    <input name="plwt" type="button" id="plwt" style="border: none" class="S205_search1 fl" value=" 批量委托 " onclick="plwt22();return false;" /></p>
+                <input type="hidden" name="hidJLBHS" id="hidJLBHS" />
+                <input type="submit" name="btnExp" value="导出" onclick="return exp22();" id="btnExp" class="S205_searchBtn fl" style="display: none;" />
+                <input name="btnImp" type="button" id="btnImp" style="border: none; display: none;" class="S205_searchBtn fl" value=" 导入 " onclick="shouopenfile();return false;" />
+            </div>
+        </div>
+        <div class="S205_sysList" style="margin-left: 4%; margin-right: 4%; padding-top: 4.8rem;
+            width: 92%;">
+            <div class="S205_listBtn1  fl " style="width: 21em">
+                <p id="td1" onclick="changebg('1')" class="S205_btnEmphasis" style="width: 33%">
+                    待委托调查</p>
+                <p id="td2" onclick="changebg('2')" style="width: 33%">
+                    待处理调查</p>
+                <p id="td3" onclick="changebg('3')" style="width: 33%">
+                    待审核调查</p>
+            </div>
+            <table class="H205_table " id="div1">
+                <tr class="H105_thead">
+                    <!-- 表头-->
+                    
+                    <td class=" layui-form S205_index" width="7%">
+                        <input type="checkbox" id="chkseltAll" name="chkseltAll" lay-filter="allChoose" lay-skin="primary"
+                            title=" " />
+                        序号
+                    </td>
+                    <td width="14%" class="H105_thead_border">
+                        嫌疑人编号
+                    </td>
+                    <td width="9%" class="H105_thead_border">
+                        嫌疑人姓名
+                    </td>
+                    <td width="70" class="H105_thead_border">
+                        性别
+                    </td>
+                    <td width="*" class="H105_thead_border">
+                        户籍
+                    </td>
+                    <td width="7%" class="H105_thead_border">
+                        出生日期
+                    </td>
+                    <td width="10%" class="H105_thead_border">
+                        委托时间
+                    </td>
+                    <td width="8%" class="H105_thead_border">
+                        联系方式
+                    </td>
+                    <td width="8%" class="H105_thead_border">
+                        调查类别
+                    </td>
+                    <td width="7%" class="H105_thead_border">
+                        选择承办人
+                    </td>
+                    
+                    <td width="150px" class="H105_thead_border">
+                        所属地区
+                    </td>
+                    
+                    <td width="90px" class="H105_thead_border">
+                        操作
+                    </td>
+                </tr>
+<td>
+                                <div class="site-demo-button">
+                                    <input id='txtSeltMemberb022faca-a972-42c9-aebf-4c9bdd44b66a0' onclick="PushNew1('选择承办人','b022faca-a972-42c9-aebf-4c9bdd44b66a0','','b022faca-a972-42c9-aebf-4c9bdd44b66a','320324');"
+                                        type="button" data-method="setTop1" value="选择承办人" class="S205_undertaker">
+                                    <img src="../images/S205_undertakerIcon.png" alt="">
+                                </div>
+                            </td>
+
+<body>
+    <div class="H105_content clear">
+        <div class="H105_leftBody">
+            <div class="H105_menu">
+                <ul class="I106_navList clear">
+                    <li>   <div class="I106_navItem  I106_navItemCurrent"> <span class="I106_navIcon I106_navIcon1"></span> <span>系统功能</span> <span class="I106_arrow I106_arrowCurrent">     </span>   </div>    <ul class="I106_subNavList" style="display: block;"><li  onclick="LinkToPage('/xtgn/dcwtlist.aspx?type=1','69');return false;"><span class="I106_subNavItem I106_subNavItemCurrent" bindurl="/xtgn/dcwtlist.aspx?type=1">诉前调查委托</span>    <div class="H105_num" id="tdAJCount1">  </div> </li><li  onclick="LinkToPage('/xtgn/dcwtlist.aspx?type=2','70');return false;"><span class="I106_subNavItem" bindurl="/xtgn/dcwtlist.aspx?type=2">审前调查委托</span>    <div class="H105_num" id="tdAJCount2">  </div> </li><li  onclick="LinkToPage('/xtgn/dccllist.aspx?type=1','72');return false;"><span class="I106_subNavItem" bindurl="/xtgn/dccllist.aspx?type=1">诉前调查处理</span></li><li  onclick="LinkToPage('/xtgn/dccllist.aspx?type=2','73');return false;"><span class="I106_subNavItem" bindurl="/xtgn/dccllist.aspx?type=2">审前调查处理</span></li><li  onclick="LinkToPage('/xtgn/tsxxlist.aspx','75');return false;"><span class="I106_subNavItem" bindurl="/xtgn/tsxxlist.aspx">庭审信息</span></li><li  onclick="LinkToPage('/xtgn/hxrylist.aspx','76');return false;"><span class="I106_subNavItem" bindurl="/xtgn/hxrylist.aspx">缓刑人员</span></li><li  onclick="LinkToPage('/xtgn/zfajlist.aspx?type=1','77');return false;"><span class="I106_subNavItem" bindurl="/xtgn/zfajlist.aspx?type=1">社区服刑人员再犯案</span></li><li  onclick="LinkToPage('/xtgn/zfajlist.aspx?type=2','78');return false;"><span class="I106_subNavItem" bindurl="/xtgn/zfajlist.aspx?type=2">刑释解教人员再犯案</span></li><li  onclick="LinkToPage('/xtgn/sfjdjglist.aspx','200');return false;"><span class="I106_subNavItem" bindurl="/xtgn/sfjdjglist.aspx">鉴定机构</span></li><li  onclick="LinkToPage('/xtgn/LSYZLIST.aspx','199');return false;"><span class="I106_subNavItem" bindurl="/xtgn/LSYZLIST.aspx">法律援助</span></li><li  onclick="LinkToPage('/xtgn/stajlist.aspx','196');return false;"><span class="I106_subNavItem" bindurl="/xtgn/stajlist.aspx">诉调对接</span></li>    </ul></li><li>   <div class="I106_navItem"> <span class="I106_navIcon I106_navIcon1"></span> <span>矫正执行查看</span> <span class="I106_arrow">     </span>   </div>    <ul class="I106_subNavList" style="display: block;"><li  ><span class="I106_subNavItem" bindurl="/jzxxck/jzrylist.aspx?type=1">解矫人员</span></li><li  ><span class="I106_subNavItem" bindurl="/jzxxck/jzrylist.aspx?type=2">在矫人员</span></li><li  ><span class="I106_subNavItem" bindurl="/jzxxck/jzryzclist.aspx">矫正人员追查</span></li><li  ><span class="I106_subNavItem" bindurl="/jzxxck/jzrytj.aspx">矫正人员统计</span></li>    </ul></li><li>   <div class="I106_navItem"> <span class="I106_navIcon I106_navIcon1"></span> <span>系统管理</span> <span class="I106_arrow">     </span>   </div>    <ul class="I106_subNavList" style="display: block;"><li  ><span class="I106_subNavItem" bindurl="/xtgl/bqlist.aspx">标签管理</span></li><li  ><span class="I106_subNavItem" bindurl="/xtgl/wsmblist.aspx">文书模板管理</span></li><li  ><span class="I106_subNavItem" bindurl="/jzxxck/kslist.aspx">科室管理</span></li><li  ><span class="I106_subNavItem" bindurl="/xtgl/qxlist.aspx">权限管理</span></li><li  ><span class="I106_subNavItem" bindurl="/xtgl/yhlist.aspx">用户管理</span></li><li  ><span class="I106_subNavItem" bindurl="/yxjk/yxjklist.aspx?type=sfj">运行监控</span></li>    </ul></li>
+                </ul>
+                
+            </div>
+        </div>
+        <iframe id="thirdpage" name="thirdpage" class="H105_iframeright " frameborder="0"
+            src="/xtgn/dcwtlist.aspx?type=1">"> </iframe>
+    </div>
+</body>
+
+ <div class="H205_wripper">
+        <div class="H205_subtitle clear">
+            <div class="H105_local fl">
+                <img src="../images/H105_local.png" alt="" class="H105_caseImg fl">
+                <p>
+                    系统功能：诉前调查委托</p>
+            </div>
+            <div class="H105_searchCoat layui-form fr clear">
+                <!-- 按钮-->
+                <p style="font-size: 14px; margin-top: 14px; float: left;">
+                    请输入姓名或嫌疑人编号:&nbsp;&nbsp;</p>
+                
+                <div class="layer-inline fl">
+                    <div class="layui-form-item S205_down"><div class="layui-input-block"><select name="drpUserArea2" id="drpUserArea2" style="width:110px" lay-filter="aihao" ><option value="320000,320100,320101,320102,320103,320104,320105,320106,320107,320111,320113,320114,320115,320116,320124,320125,320200,320201,320202,320203,320204,320205,320206,320211,320281,320282,320300,320301,320302,320303,320304,320305,320311,320321,320322,320323,320324,320381,320382,320400,320401,320402,320404,320405,320411,320412,320481,320482,320500,320501,320502,320503,320504,320505,320506,320507,320581,320582,320583,320584,320585,320600,320601,320602,320611,320621,320623,320681,320682,320683,320684,320700,320701,320703,320705,320706,320721,320722,320723,320724,320800,320801,320802,320803,320804,320811,320826,320829,320830,320831,320900,320901,320902,320903,320921,320922,320923,320924,320925,320981,320982,321000,321001,321002,321003,321011,321023,321081,321084,321088,321100,321101,321102,321111,321112,321181,321182,321183,321200,321201,321202,321203,321281,321282,321283,321284,321300,321301,321302,321321,321322,321323,321324">--所有单位--</option><option value="320000">江苏省司法局</option><option value="320100">南京市司法局</option><option value="320101">市辖区司法局</option><option value="320102">玄武区司法局</option><option value="320103">白下区司法局</option><option value="320104">秦淮区司法局</option><option value="320105">建邺区司法局</option><option value="320106">鼓楼区司法局</option><option value="320107">下关区司法局</option><option value="320111">浦口区司法局</option><option value="320113">栖霞区司法局</option><option value="320114">雨花台区司法局</option><option value="320115">江宁区司法局</option><option value="320116">六合区司法局</option><option value="320124">溧水县司法局</option><option value="320125">高淳县司法局</option><option value="320200">无锡市司法局</option><option value="320201">市辖区司法局</option><option value="320202">崇安区司法局</option><option value="320203">南长区司法局</option><option value="320204">北塘区司法局</option><option value="320205">锡山区司法局</option><option value="320206">惠山区司法局</option><option value="320211">滨湖区司法局</option><option value="320281">江阴市司法局</option><option value="320282">宜兴市司法局</option><option value="320300">徐州市司法局</option><option value="320301">市辖区司法局</option><option value="320302">鼓楼区司法局</option><option value="320303">云龙区司法局</option><option value="320304">九里区司法局</option><option value="320305">贾汪区司法局</option><option value="320311">泉山区司法局</option><option value="320321">丰县司法局</option><option value="320322">沛县司法局</option><option value="320323">铜山县司法局</option><option value="320324">睢宁县司法局</option><option value="320381">新沂市司法局</option><option value="320382">邳州市司法局</option><option value="320400">常州市司法局</option><option value="320401">市辖区司法局</option><option value="320402">天宁区司法局</option><option value="320404">钟楼区司法局</option><option value="320405">戚墅堰区司法局</option><option value="320411">新北区司法局</option><option value="320412">武进区司法局</option><option value="320481">溧阳市司法局</option><option value="320482">金坛市司法局</option><option value="320500">苏州市司法局</option><option value="320501">市辖区司法局</option><option value="320502">沧浪区司法局</option><option value="320503">平江区司法局</option><option value="320504">金阊区司法局</option><option value="320505">虎丘区司法局</option><option value="320506">吴中区司法局</option><option value="320507">相城区司法局</option><option value="320581">常熟市司法局</option><option value="320582">张家港市司法局</option><option value="320583">昆山市司法局</option><option value="320584">吴江区司法局</option><option value="320585">太仓市司法局</option><option value="320600">南通市司法局</option><option value="320601">市辖区司法局</option><option value="320602">崇川区司法局</option><option value="320611">港闸区司法局</option><option value="320621">海安县司法局</option><option value="320623">如东县司法局</option><option value="320681">启东市司法局</option><option value="320682">如皋市司法局</option><option value="320683">通州市司法局</option><option value="320684">海门市司法局</option><option value="320700">连云港市司法局</option><option value="320701">市辖区司法局</option><option value="320703">连云区司法局</option><option value="320705">新浦区司法局</option><option value="320706">海州区司法局</option><option value="320721">赣榆县司法局</option><option value="320722">东海县司法局</option><option value="320723">灌云县司法局</option><option value="320724">灌南县司法局</option><option value="320800">淮安市司法局</option><option value="320801">市辖区司法局</option><option value="320802">清河区司法局</option><option value="320803">楚州区司法局</option><option value="320804">淮阴区司法局</option><option value="320811">清浦区司法局</option><option value="320826">涟水县司法局</option><option value="320829">洪泽县司法局</option><option value="320830">盱眙县司法局</option><option value="320831">金湖县司法局</option><option value="320900">盐城市司法局</option><option value="320901">市辖区司法局</option><option value="320902">亭湖区司法局</option><option value="320903">盐都区司法局</option><option value="320921">响水县司法局</option><option value="320922">滨海县司法局</option><option value="320923">阜宁县司法局</option><option value="320924">射阳县司法局</option><option value="320925">建湖县司法局</option><option value="320981">东台市司法局</option><option value="320982">大丰市司法局</option><option value="321000">扬州市司法局</option><option value="321001">市辖区司法局</option><option value="321002">广陵区司法局</option><option value="321003">邗江区司法局</option><option value="321011">郊区司法局</option><option value="321023">宝应县司法局</option><option value="321081">仪征市司法局</option><option value="321084">高邮市司法局</option><option value="321088">江都市司法局</option><option value="321100">镇江市司法局</option><option value="321101">市辖区司法局</option><option value="321102">京口区司法局</option><option value="321111">润州区司法局</option><option value="321112">丹徒区司法局</option><option value="321181">丹阳市司法局</option><option value="321182">扬中市司法局</option><option value="321183">句容市司法局</option><option value="321200">泰州市司法局</option><option value="321201">市辖区司法局</option><option value="321202">海陵区司法局</option><option value="321203">高港区司法局</option><option value="321281">兴化市司法局</option><option value="321282">靖江市司法局</option><option value="321283">泰兴市司法局</option><option value="321284">姜堰市司法局</option><option value="321300">宿迁市司法局</option><option value="321301">市辖区司法局</option><option value="321302">宿城区司法局</option><option value="321321">宿豫县司法局</option><option value="321322">沭阳县司法局</option><option value="321323">泗阳县司法局</option><option value="321324">泗洪县司法局</option></select></div></div></div>
+                <input name="txtKeyWords" type="text" id="txtKeyWords" class="S205_search fl" onkeypress="javascript:EnterTo()" />
+                <input type="submit" name="imgBtnQuery" value=" 搜索 " onclick="Search();" id="imgBtnQuery" class="S205_searchBtn fl" />
+                <div style="display: none;">
+                    <select name="drpUserArea" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;drpUserArea\&#39;,\&#39;\&#39;)&#39;, 0)" id="drpUserArea" class="input4">
+	<option selected="selected" value="320000,320100,320101,320102,320103,320104,320105,320106,320107,320111,320113,320114,320115,320116,320124,320125,320200,320201,320202,320203,320204,320205,320206,320211,320281,320282,320300,320301,320302,320303,320304,320305,320311,320321,320322,320323,320324,320381,320382,320400,320401,320402,320404,320405,320411,320412,320481,320482,320500,320501,320502,320503,320504,320505,320506,320507,320581,320582,320583,320584,320585,320600,320601,320602,320611,320621,320623,320681,320682,320683,320684,320700,320701,320703,320705,320706,320721,320722,320723,320724,320800,320801,320802,320803,320804,320811,320826,320829,320830,320831,320900,320901,320902,320903,320921,320922,320923,320924,320925,320981,320982,321000,321001,321002,321003,321011,321023,321081,321084,321088,321100,321101,321102,321111,321112,321181,321182,321183,321200,321201,321202,321203,321281,321282,321283,321284,321300,321301,321302,321321,321322,321323,321324">--所有单位--</option>
+	<option value="320000">江苏省司法局</option>
+	<option value="320100">南京市司法局</option>
+	<option value="320101">市辖区司法局</option>
+	<option value="320102">玄武区司法局</option>
+	<option value="320103">白下区司法局</option>
+	<option value="320104">秦淮区司法局</option>
+	<option value="320105">建邺区司法局</option>
+	<option value="320106">鼓楼区司法局</option>
+	<option value="320107">下关区司法局</option>
+	<option value="320111">浦口区司法局</option>
+	<option value="320113">栖霞区司法局</option>
+	<option value="320114">雨花台区司法局</option>
+	<option value="320115">江宁区司法局</option>
+	<option value="320116">六合区司法局</option>
+	<option value="320124">溧水县司法局</option>
+	<option value="320125">高淳县司法局</option>
+	<option value="320200">无锡市司法局</option>
+	<option value="320201">市辖区司法局</option>
+	<option value="320202">崇安区司法局</option>
+	<option value="320203">南长区司法局</option>
+	<option value="320204">北塘区司法局</option>
+	<option value="320205">锡山区司法局</option>
+	<option value="320206">惠山区司法局</option>
+	<option value="320211">滨湖区司法局</option>
+	<option value="320281">江阴市司法局</option>
+	<option value="320282">宜兴市司法局</option>
+	<option value="320300">徐州市司法局</option>
+	<option value="320301">市辖区司法局</option>
+	<option value="320302">鼓楼区司法局</option>
+	<option value="320303">云龙区司法局</option>
+	<option value="320304">九里区司法局</option>
+	<option value="320305">贾汪区司法局</option>
+	<option value="320311">泉山区司法局</option>
+	<option value="320321">丰县司法局</option>
+	<option value="320322">沛县司法局</option>
+	<option value="320323">铜山县司法局</option>
+	<option value="320324">睢宁县司法局</option>
+	<option value="320381">新沂市司法局</option>
+	<option value="320382">邳州市司法局</option>
+	<option value="320400">常州市司法局</option>
+	<option value="320401">市辖区司法局</option>
+	<option value="320402">天宁区司法局</option>
+	<option value="320404">钟楼区司法局</option>
+	<option value="320405">戚墅堰区司法局</option>
+	<option value="320411">新北区司法局</option>
+	<option value="320412">武进区司法局</option>
+	<option value="320481">溧阳市司法局</option>
+	<option value="320482">金坛市司法局</option>
+	<option value="320500">苏州市司法局</option>
+	<option value="320501">市辖区司法局</option>
+	<option value="320502">沧浪区司法局</option>
+	<option value="320503">平江区司法局</option>
+	<option value="320504">金阊区司法局</option>
+	<option value="320505">虎丘区司法局</option>
+	<option value="320506">吴中区司法局</option>
+	<option value="320507">相城区司法局</option>
+	<option value="320581">常熟市司法局</option>
+	<option value="320582">张家港市司法局</option>
+	<option value="320583">昆山市司法局</option>
+	<option value="320584">吴江区司法局</option>
+	<option value="320585">太仓市司法局</option>
+	<option value="320600">南通市司法局</option>
+	<option value="320601">市辖区司法局</option>
+	<option value="320602">崇川区司法局</option>
+	<option value="320611">港闸区司法局</option>
+	<option value="320621">海安县司法局</option>
+	<option value="320623">如东县司法局</option>
+	<option value="320681">启东市司法局</option>
+	<option value="320682">如皋市司法局</option>
+	<option value="320683">通州市司法局</option>
+	<option value="320684">海门市司法局</option>
+	<option value="320700">连云港市司法局</option>
+	<option value="320701">市辖区司法局</option>
+	<option value="320703">连云区司法局</option>
+	<option value="320705">新浦区司法局</option>
+	<option value="320706">海州区司法局</option>
+	<option value="320721">赣榆县司法局</option>
+	<option value="320722">东海县司法局</option>
+	<option value="320723">灌云县司法局</option>
+	<option value="320724">灌南县司法局</option>
+	<option value="320800">淮安市司法局</option>
+	<option value="320801">市辖区司法局</option>
+	<option value="320802">清河区司法局</option>
+	<option value="320803">楚州区司法局</option>
+	<option value="320804">淮阴区司法局</option>
+	<option value="320811">清浦区司法局</option>
+	<option value="320826">涟水县司法局</option>
+	<option value="320829">洪泽县司法局</option>
+	<option value="320830">盱眙县司法局</option>
+	<option value="320831">金湖县司法局</option>
+	<option value="320900">盐城市司法局</option>
+	<option value="320901">市辖区司法局</option>
+	<option value="320902">亭湖区司法局</option>
+	<option value="320903">盐都区司法局</option>
+	<option value="320921">响水县司法局</option>
+	<option value="320922">滨海县司法局</option>
+	<option value="320923">阜宁县司法局</option>
+	<option value="320924">射阳县司法局</option>
+	<option value="320925">建湖县司法局</option>
+	<option value="320981">东台市司法局</option>
+	<option value="320982">大丰市司法局</option>
+	<option value="321000">扬州市司法局</option>
+	<option value="321001">市辖区司法局</option>
+	<option value="321002">广陵区司法局</option>
+	<option value="321003">邗江区司法局</option>
+	<option value="321011">郊区司法局</option>
+	<option value="321023">宝应县司法局</option>
+	<option value="321081">仪征市司法局</option>
+	<option value="321084">高邮市司法局</option>
+	<option value="321088">江都市司法局</option>
+	<option value="321100">镇江市司法局</option>
+	<option value="321101">市辖区司法局</option>
+	<option value="321102">京口区司法局</option>
+	<option value="321111">润州区司法局</option>
+	<option value="321112">丹徒区司法局</option>
+	<option value="321181">丹阳市司法局</option>
+	<option value="321182">扬中市司法局</option>
+	<option value="321183">句容市司法局</option>
+	<option value="321200">泰州市司法局</option>
+	<option value="321201">市辖区司法局</option>
+	<option value="321202">海陵区司法局</option>
+	<option value="321203">高港区司法局</option>
+	<option value="321281">兴化市司法局</option>
+	<option value="321282">靖江市司法局</option>
+	<option value="321283">泰兴市司法局</option>
+	<option value="321284">姜堰市司法局</option>
+	<option value="321300">宿迁市司法局</option>
+	<option value="321301">市辖区司法局</option>
+	<option value="321302">宿城区司法局</option>
+	<option value="321321">宿豫县司法局</option>
+	<option value="321322">沭阳县司法局</option>
+	<option value="321323">泗阳县司法局</option>
+	<option value="321324">泗洪县司法局</option>
+
+</select>
+                </div>
+                <p style="float: left;" id="td_plwt">
+                    <input name="plwt" type="button" id="plwt" style="border: none" class="S205_search1 fl" value=" 批量委托 " onclick="plwt22();return false;" /></p>
+                <input type="hidden" name="hidJLBHS" id="hidJLBHS" />
+                <input type="submit" name="btnExp" value="导出" onclick="return exp22();" id="btnExp" class="S205_search1 fl" />
+                <input name="btnImp" type="button" id="btnImp" style="border: none" class="S205_search1 fl" value=" 导入 " onclick="DRAJ();" />
+            </div>
+        </div>
+        <div class="S205_sysList2" style="padding-top: 4.8em">
+            <div class="S205_listBtn1  fl " style="width: 35em">
+                <p id="td1" onclick="changebg('1')" class="S205_btnEmphasis" style="width: 20%">
+                    未分</p>
+                <p id="td2" onclick="changebg('2')" style="width: 20%">
+                    已分</p>
+                <p id="td3" onclick="changebg('3')" style="width: 20%">
+                    待审核</p>
+                <p id="td4" onclick="changebg('4')" style="width: 20%">
+                    已审核</p>
+                <p id="td5" onclick="changebg('5')" style="width: 20%">
+                    已发送</p>
+            </div>
+            <table class="H205_table " id="div1">
+                <tr class="H105_thead">
+ <!-- 表头-->
+                    
+                    <td class=" layui-form S205_index" width="7%">
+                        <input type="checkbox" id="chkseltAll" name="chkseltAll" lay-filter="allChoose" lay-skin="primary"
+                            title=" " />
+                        序号
+                    </td>
+                    <td width="16%" class="H105_thead_border">
+                        嫌疑人编号
+                    </td>
+                    <td width="9%" class="H105_thead_border">
+                        嫌疑人姓名
+                    </td>
+                    <td width="70" class="H105_thead_border">
+                        性别
+                    </td>
+                    <td width="*" class="H105_thead_border">
+                        户籍
+                    </td>
+                    <td width="10%" class="H105_thead_border">
+                        出生日期
+                    </td>
+                    <td width="10%" class="H105_thead_border">
+                        委托时间
+                    </td>
+                    <td width="8%" class="H105_thead_border">
+                        联系方式
+                    </td>
+                    <td width="7%" class="H105_thead_border">
+                        选择承办人
+                    </td>
+                    
+                    <td width="150px" class="H105_thead_border">
+                        所属地区
+                    </td>
+                    
+                    <td width="90px" class="H105_thead_border">
+                        操作
+                    </td>
+                </tr>

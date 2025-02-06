@@ -1,0 +1,9 @@
+{"id": "b24dcacde270efdd394cb28d671fe8948c982c505e474067ef376da1550f12f6", "value": {"abstract": "file1.md", "graph_stat": {"num_nodes": 50, "num_edges": 75, "num_subgraphs": 4}}}
+{"id": "6976da4f015efb66479827799cf559fa5bdeb96312904ebb6c539db455be50ca", "value": {"abstract": "file3.pdf", "graph_stat": {"num_nodes": 0, "num_edges": 0, "num_subgraphs": 0}}}
+{"id": "00f24985108693bc1ac9e137e7b5c214e1e9a3a50a8e703e420a76850e4c7ea6", "value": {"abstract": "file2.docx", "graph_stat": {"num_nodes": 55, "num_edges": 71, "num_subgraphs": 3}}}
+{"id": "5d0579eeeba9396a3c1154762f927d5a220ff561ba710ff6698b9657b169e9a9", "value": {"abstract": "file4.md", "graph_stat": {"num_nodes": 76, "num_edges": 102, "num_subgraphs": 5}}}
+{"id": "59f43b01cdb6b1499ec686924fb5972d0aca09917e8c6af3106da21f5b1bfd57", "value": {"abstract": "file5.md", "graph_stat": {"num_nodes": 14, "num_edges": 19, "num_subgraphs": 1}}}
+{"id": "58243cdfdf1e2a76d28e38d7341205a01a937dee0f4e26d777e3b4b763325bc1", "value": {"abstract": "file6.md", "graph_stat": {"num_nodes": 68, "num_edges": 95, "num_subgraphs": 5}}}
+{"id": "927218bc6a0d79f359cb06547ce3a4aba3f168efdaaf2b5620f7a4dfdfa38473", "value": {"abstract": "file7.md", "graph_stat": {"num_nodes": 40, "num_edges": 55, "num_subgraphs": 3}}}
+{"id": "8b4edf7264ecb330528655977465a8660db911633af4802120708506c18dbdd4", "value": {"abstract": "file8.docx", "graph_stat": {"num_nodes": 60, "num_edges": 80, "num_subgraphs": 4}}}
+{"id": "c944a2c4315e8e52bbbb67503ba60313e5344efa12ef1fc555c317fab3f2a8c3", "value": {"abstract": "file9.pdf", "graph_stat": {"num_nodes": 0, "num_edges": 0, "num_subgraphs": 0}}}

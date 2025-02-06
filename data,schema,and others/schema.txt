@@ -1,0 +1,126 @@
+namespace KAG
+
+NaturalScience(自然科学): EntityType
+	properties:
+		semanticType(semanticType): Text
+			index:Text
+		desc(desc): Text
+			index:TextAndVector
+
+Keyword(关键词): EntityType
+	properties:
+		semanticType(semanticType): Text
+			index:Text
+		desc(desc): Text
+			index:TextAndVector
+
+Date(日期): EntityType
+	properties:
+		semanticType(semanticType): Text
+			index:Text
+		desc(desc): Text
+			index:TextAndVector
+
+Others(其他): EntityType
+	properties:
+		desc(desc): Text
+			index:TextAndVector
+		semanticType(semanticType): Text
+			index:Text
+
+SemanticConcept(语义概念): EntityType
+	properties:
+		desc(desc): Text
+			index:TextAndVector
+		semanticType(semanticType): Text
+			index:Text
+
+ArtificialObject(人造物体): EntityType
+	properties:
+		desc(desc): Text
+			index:TextAndVector
+		semanticType(semanticType): Text
+			index:Text
+
+Astronomy(天文学): EntityType
+	properties:
+		desc(desc): Text
+			index:TextAndVector
+		semanticType(semanticType): Text
+			index:Text
+
+Chunk(文本块): EntityType
+	properties:
+		content(content): Text
+			index:TextAndVector
+
+Transport(运输): EntityType
+	properties:
+		semanticType(semanticType): Text
+			index:Text
+		desc(desc): Text
+			index:TextAndVector
+
+Creature(生物): EntityType
+	properties:
+		semanticType(semanticType): Text
+			index:Text
+		desc(desc): Text
+			index:TextAndVector
+
+Person(人物): EntityType
+	properties:
+		semanticType(semanticType): Text
+			index:Text
+		desc(desc): Text
+			index:TextAndVector
+
+Building(建筑): EntityType
+	properties:
+		semanticType(semanticType): Text
+			index:Text
+		desc(desc): Text
+			index:TextAndVector
+
+Medicine(药物): EntityType
+	properties:
+		desc(desc): Text
+			index:TextAndVector
+		semanticType(semanticType): Text
+			index:Text
+
+GeographicLocation(地理位置): EntityType
+	properties:
+		desc(desc): Text
+			index:TextAndVector
+		semanticType(semanticType): Text
+			index:Text
+
+Concept(概念): EntityType
+	properties:
+		desc(desc): Text
+			index:TextAndVector
+		semanticType(semanticType): Text
+			index:Text
+
+Works(作品): EntityType
+	properties:
+		desc(desc): Text
+			index:TextAndVector
+		semanticType(semanticType): Text
+			index:Text
+
+Event(事件): EntityType
+	properties:
+		semanticType(semanticType): Text
+			index:Text
+		desc(desc): Text
+			index:TextAndVector
+
+Organization(组织机构): EntityType
+	properties:
+		semanticType(semanticType): Text
+			index:Text
+		desc(desc): Text
+			index:TextAndVector
+
